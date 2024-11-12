@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Royal Villas</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/mobil.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="#">
+          <img src="./img/logo.jpg" alt="Royal villas" />
+        </a>
+      </div>
+    </header>
+
+    <main class="our">
+      <div class="team">
+        <h3 class="team__subtitle">Our Team</h3>
+        <h2 class="team__title">A Dedicated Team of Experts</h2>
+        <p class="team__text">
+          Passion, experience and a fierce commitment to education are the
+          cornerstones of our success in the beauty industry
+        </p>
+        <p class="team__text team__text--gay">
+          We believe that being the largest SPA in the area is not enough in
+          itself to satisfy the needs of our customers. For this reason we have
+          built up a staff of specialized professionals who are proud to welcome
+          you to our hotel, present What We Do, listen to your needs and
+          guarantee well-being and relaxation during your stay at our SPA
+          Resort.
+        </p>
+        <p class="team__text team__text--gay">
+          Everyone in our team is a certified specialist capable of delivering a
+          unique service of high quality you won't find anywhere else in modern
+          spa and resort industry.
+        </p>
+
+        <a href="#" class="team__btn" id="open">learn more</a>
+        <a href="#" class="team__btn">view all team</a>
+      </div>
+
+      <div class="personal-bg">
+        <article class="personal">
+          <img
+            class="personal__picture"
+            src="./img/foto1.jpg"
+            alt="Jessica Cooper"
+          />
+          <h2 class="personal__name">Jessica Cooper</h2>
+          <span class="personal__ocupation">Esthetican</span>
+          <div class="personal__icons">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-pinterest"></i>
+          </div>
+          <div>
+            <a class="personal__btn" href="#">get in touch</a>
+          </div>
+        </article>
+
+        <article class="personal">
+          <img
+            class="personal__picture"
+            src="./img/foto2.jpg"
+            alt="Robert Wagner"
+          />
+          <h2 class="personal__name">Robert Wagner</h2>
+          <span class="personal__ocupation">Hairdresser</span>
+          <div class="personal__icons">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-pinterest"></i>
+          </div>
+          <div>
+            <a class="personal__btn" href="#">get in touch</a>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <footer class="footer-bg"></footer>
+
+    <div class="modal-overlay" id="modal">
+      <div class="modal">
+        <div class="icon">
+          <i class="fa-solid fa-xmark" id="close"></i>
+        </div>
+        <h2 class="contact">Contact Us</h2>
+        <p class="form__text">
+          If you have any questions concerning our services, please fill out the
+          contact from below.
+        </p>
+        <form class="form">
+          <input type="text" placeholder="Name *" />
+          <input type="text" placeholder="E-mail *" />
+          <textarea placeholder="Message *"></textarea>
+        </form>
+
+        <button class="personal__btn personal__btn--submit" type="submit">
+          SUBMIT
+        </button>
+      </div>
+    </div>
+
+    <script>
+      $("#open").click(function () {
+        $("#modal").addClass("display");
+      });
+
+      $("#close").click(function () {
+        $("#modal").removeClass("display");
+      });
+    </script>
+  </body>
+</html>

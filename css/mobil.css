@@ -1,0 +1,19 @@
+@media (max-width: 390px) {
+    .our{
+        flex-direction: column;
+    }
+    .team{
+        width: 100%; 
+        padding: 10rem 0;
+        max-width: 90%;
+    }
+    .team__btn:first-of-type {
+        margin-bottom: 2rem;
+    }
+    .personal-bg{
+        flex-direction: column;
+        max-width: 100;
+        width: 100%;
+    }
+    .personal{margin: auto;}
+}
